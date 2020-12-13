@@ -1,0 +1,41 @@
+import React from 'react';
+import {Container} from 'reactstrap';
+import ToDoIndex from "./ToDoIndex";
+
+const ToDo = () => {
+  return(
+    <Container className="App">
+     <br />
+       <h1 className="App-intro">
+     In this challenge your goal is to create a to do list: 
+       </h1>
+       <hr />
+       <ul>
+         <li>
+           {/* 
+            1.HTML form task name and description inputs
+            2.Task Class
+              A.array of task objects 
+              B. properties of task name, task descrip and isDone.
+
+            3. Methods Add task. Display task. update is done.
+            */}
+           ability to accept a task from a user
+         </li>
+         <li>
+            ability to add this to the state
+         </li>
+         <li>
+            ability to display all of the tasks
+         </li>
+         <li>
+            ability to evaluated if a task was completed and update the state
+         </li>
+       </ul>
+       <hr />
+       <ToDoIndex/>
+     </Container>
+  );
+};
+
+export default ToDo
